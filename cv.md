@@ -1,9 +1,9 @@
 ## Stepanuik Roman
 
 ## Contacts:
-**Phone**: +38 068 3266008
-**Telegram**: @xjzth
-**E-mail**: stapanukroman9@gmail.com
+* Phone: +38 068 32008
+* Telegram: @xjzth
+* E-mail: stapanukroman9@gmail.com
 
 ## About me:
 I am 17 years old, this year I graduated from school and passed all the necessary exams. My passion for programming led me to seek new challenges and skills to develop my skills and knowledge in this field. I want to learn new technologies, deepen my knowledge.
