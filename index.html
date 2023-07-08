@@ -3,41 +3,208 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Stepanuik Roman CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <h1>Stepanuik Roman</h1>
-    <nav>
-      <h2>Contacts:</h2>
-      <ul>
-        <li>Phone:<a href="#">+38 068 32008</a></li>
-        <li>Telegram:<a href="#">@xjzth</a></li>
-        <li>E-mail:<a href="#">stepanukroman9@gmail.com</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header-bg__left"></div>
+    <div class="header-bg__right"></div>
+
+    <div class="header__container container">
+      <div class="header-container__left">
+        <img src="./image/ava_header.jpg" alt="stepanuik_ava">
+      </div>
+
+      <div class="header-container__right">
+        <div class="header__content">
+          <h1 class="header__title"><span>Stepanuik</span> Roman</h1>
+          <h3 class="header__subtitle">Frontend developer</h3>
+        </div>
+        
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <h4>Phone number</h4>
+            <p>+380 68 326-60-08</p>
+          </li>
+          <li class="header__contacts-item">
+            <h4>Email</h4>
+            <p><a href="mailto:stepanukroman9@gmail.com">stepanukroman9@gmail.com</a></p>
+          </li>
+          <li class="header__contacts-item">
+            <h4>Telegram</h4>
+            <p>@xjzth</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
-  <main>
-    <h2>About me:</h2>
-    <p>
-      I am 17 years old, this year I graduated from school and passed all the necessary exams.
-      My passion for programming led me to seek new challenges and skills to develop my skills and knowledge in this field.
-      I want to learn new technologies, deepen my knowledge.
-    </p>
-    <h2>Skills and Proficiency:</h2>
-    <ol>
-      <li>HTML, CSS</li>
-      <li>JavaScript Basics</li>
-      <li>Java Basics</li>
-      <li>Git, GitHub</li>
-      <li>VS Code, IntelliJ IDEA</li>
-      <li>Figma</li>
-    </ol>
-    <h2>Education:</h2>
-    <p>This year I will enroll, I am studying programming on my own</p>
-    <h2>English:</h2>
-    <p>A1</p>
+
+  <main class="main">
+
+    <section class="about-me">
+
+      <div class="about-me__bg__left"></div>
+      <div class="about-me__bg__right"></div>
+
+      <div class="about-me__container container">
+        <div class="about-me__container__left">
+          <h2 class="about-me__title"><b>About me</b></h2>
+          <h3 class="about-me__subtitle subtitle">A few words</h3>
+        </div>
+
+        <div class="about-me__container__right">
+          <p>I am 17 years old, this year I graduated from school and passed 
+            all the necessary exams. My passion for programming led me to seek 
+            new challenges and skills to develop my skills and knowledge in this
+            field. I want to learn new technologies, deepen my knowledge.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="skills">
+      <div class="skills__bg__left"></div>
+      <div class="skills__bg__right"></div>
+
+      <div class="skills__contsiner container">
+        <div class="skills__container__left">
+          <h2><b>Skills</b></h2>
+        </div>
+        <div class="skills__container__right">
+          <ul class="skills-grid">
+            <li class="skills-box">
+              <h4>Html</h4>
+              <p>70%</p>
+              <div class="skills-bar">
+                <div class="skills-bar__progres__html"></div>
+              </div>
+            </li>
+            <li class="skills-box">
+              <h4>Css</h4>
+              <p>60%</p>
+              <div class="skills-bar">
+                <div class="skills-bar__progres__css"></div>
+              </div>
+            </li>
+            <li class="skills-box">
+              <h4>JavaScript</h4>
+              <p>40%</p>
+              <div class="skills-bar">
+                <div class="skills-bar__progres__javascript"></div>
+              </div>
+            </li>
+            <li class="skills-box">
+              <h4>Java</h4>
+              <p>30%</p>
+              <div class="skills-bar">
+                <div class="skills-bar__progres__java"></div>
+              </div>
+            </li>
+            <li class="skills-box">
+              <h4>Figma</h4>
+              <p>50%</p>
+              <div class="skills-bar">
+                <div class="skills-bar__progres__figma"></div>
+              </div>
+            </li>
+            <li class="skills-box">
+              <h4>Git</h4>
+              <p>40%</p>
+              <div class="skills-bar">
+                <div class="skills-bar__progres__git"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="code-example">
+      <div class="code-example__bg__left"></div>
+      <div class="code-example__bg__right"></div>
+      <div class="code-example__container container">
+        <div class="code-example__container__left">
+          <h2 class="code-example__title"><b>Code example</b></h2>
+        </div>
+        <div class="code-example__container__right">
+          <pre>
+            <code>
+  const map = { M:1000, CM:900, D:500, CD:400, C:100, XC:90, L:50, XL:40, X:10, IX:9, V:5, IV:4, I:1};
+
+  class RomanNumerals {
+      static toRoman(num) {
+          let str = '';
+          for (var i in map) {
+              while (num >= map[i]) {
+                  str += i;
+                num -= map[i];
+              }
+          }
+          return str;
+      }
+      
+      static fromRoman(str) {
+          return str.match(/CM|CD|XC|XL|IX|IV|\w/g).reduce((a, b) => a + map[b], 0);
+      }
+  }
+            </code>
+          </pre>
+        </div>
+      </div>
+    </section>
+    
+    <section class="education">
+      <div class="education__bg__left"></div>
+      <div class="education__bg__right"></div>
+
+      <div class="education__container container">
+        <div class="education__conteiner__left">
+          <h2 class="education__title"><b>Education</b></h2>
+        </div>
+
+        <div class="education__container__right">
+          <p>This year I will enroll, I am studying programming on my own</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="english">
+      <div class="english__bg__left"></div>
+      <div class="english__bg__right"></div>
+
+      <div class="english__container container">
+        <div class="english__container__left">
+          <h2 class="englis__title"><b>English</b></h2>
+          <h3 class="english__subtitle subtitle"><b>A1</b></h3>
+        </div>
+
+        <div class="english__container__right">
+          <p>I have no speaking practice</p>
+        </div>     
+      </div>
+    </section>
+    
   </main>
-  <footer></footer>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__container__top">
+        <ul class="footer__links">
+          <li class="footer__item"><a class="footer__link footer__link--rsschool"
+              href="https://rs.school/js/"></a></li>
+          <li class="footer__item"><a class="footer__link footer__link--github"
+              href="https://github.com/old7evenn"></a></li>
+        </ul>
+      </div>
+      <div class="footer__container__bottom">
+        <h6>Stepanuik Roman 2023</h6>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
