@@ -29,23 +29,25 @@ const autoSlide = () =>{
   showSlide(slideIndex);
 }
 
-setInterval(autoSlide, 3000);
+setInterval(autoSlide, 5000);
 
 
-const buttons = document.querySelectorAll('.btn');
+// const buttons = document.querySelectorAll('.btn');
 
-buttons.forEach(button => {
-  button.addEventListener('click', function() {
-    if (button.classList.contains('btn--active')) {
-      button.classList.remove('btn--active');
-    } else {
-      buttons.forEach(btn => {
-        btn.classList.remove('btn--active');
-        btn.textContent = 'Buy'
-      });
-      button.classList.add('btn--active');
-    }
-    (button.textContent === 'Buy') ? button.textContent = 'Own' : button.textContent = 'Buy';
-  });
-});
+// buttons.forEach(button => {
+//   button.addEventListener('click', function() {
+//     if (button.classList.contains('btn--active')) {
+//       button.classList.remove('btn--active');
+//     } else {
+//       buttons.forEach(btn => {
+//         btn.classList.remove('btn--active');
+//         btn.textContent = 'Buy'
+//       });
+//       button.classList.add('btn--active');
+//     }
+//     (button.textContent === 'Buy') ? button.textContent = 'Own' : button.textContent = 'Buy';
+//   });
+// });
+
+console.log('1.Вёрстка валидная +10\n2.Вёрстка семантическая +16\n3.Вёрстка соответствует макету +54\n4.Общие требования к верстке +20');
 
