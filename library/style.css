@@ -524,12 +524,13 @@ body {
 
 .assortment {
   color: #000;
-  font-family: Forum;
+  font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 2px;
+  text-transform: capitalize;
 }
 
 .line-price {
